@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Health & Wellness</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="events">
+    <!-- Header Section -->
+    <header class="hero">
+        <h1>Upcoming Health and Wellness Events</h1>
+        <p>Start your journey towards a healthier life with our events!</p>
+    </header>
+
+
+    <!-- Event Container -->
+<div class="event-container">
+    <!-- Health and Wellness Workshop -->
+    <div class="event-card">
+        <img src="../images/event1.jpg" alt="Health and Wellness Workshop">
+        <div class="event-info">
+            <h3>Health and Wellness Workshop</h3>
+            <p>Date: March 25, 2024 | Time: 10:00 AM</p>
+            <p>Location: Health Center, NYC</p>
+            <p>This workshop will cover a variety of topics including healthy eating, fitness routines, and mental wellness. Join us for a full day of engaging sessions and expert speakers!</p>
+        </div>
+    </div>
+
+    <!-- Yoga for Beginners -->
+    <div class="event-card">
+        <img src="../images/event2.jpg" alt="Yoga for Beginners">
+        <div class="event-info">
+            <h3>Yoga for Beginners</h3>
+            <p>Date: April 10, 2024 | Time: 9:00 AM</p>
+            <p>Location: Wellness Studio, NYC</p>
+            <p>This beginner-friendly yoga class focuses on the fundamentals of yoga poses, breathing techniques, and relaxation. Perfect for those new to yoga or looking to deepen their practice.</p>
+        </div>
+    </div>
+
+    <!-- Fitness Bootcamp -->
+    <div class="event-card">
+        <img src="../images/event3.jpg" alt="Fitness Bootcamp">
+        <div class="event-info">
+            <h3>Fitness Bootcamp</h3>
+            <p>Date: April 15, 2024 | Time: 8:00 AM</p>
+            <p>Location: City Park, NYC</p>
+            <p>Join us for an intense fitness bootcamp that includes strength training, cardio workouts, and group exercises designed to challenge you and help you achieve your fitness goals.</p>
+        </div>
+    </div>
+
+    <!-- Meditation Retreat -->
+    <div class="event-card">
+        <img src="../images/event4.jpg" alt="Meditation Retreat">
+        <div class="event-info">
+            <h3>Meditation Retreat</h3>
+            <p>Date: May 5, 2024 | Time: 6:00 AM</p>
+            <p>Location: Tranquil Hills, NYC</p>
+            <p>Experience a peaceful escape from the hustle and bustle. Our meditation retreat includes guided sessions, mindful breathing practices, and reflection time in a serene environment.</p>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Registration Form -->
+    <div id="registration-form-container" class="registration-form-container">
+        <h2>Event Registration</h2>
+        <form id="registration-form" onsubmit="submitForm(event)">
+            <label for="event-select">Select Event:</label>
+            <select id="event-select" required>
+                <option value="">Select an Event</option>
+                <option value="Yoga for Beginners">Yoga for Beginners</option>
+                <option value="Fitness Bootcamp">Fitness Bootcamp</option>
+                <option value="Meditation Retreat">Meditation Retreat</option>
+            </select><br>
+
+            <input type="text" id="name" placeholder="Full Name" required><br>
+            <input type="email" id="email" placeholder="Email Address" required><br>
+            <input type="phone" id="phone" placeholder="Phone Number" required><br>
+            <textarea id="message" placeholder="Any Special Requests?" rows="4"></textarea><br>
+            <button type="submit" class="btn">Register Now</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Health & Wellness | All rights reserved</p>
+    </footer>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

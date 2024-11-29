@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Corrected CSS path -->
+</head>
+<body>
+
+    <!-- Program Overview Section -->
+    <section id="programs" class="program-overview">
+        <h2>Our Programs</h2>
+        <p>Choose from a variety of health and wellness programs designed to help you achieve your goals. Whether you want to get fit, reduce stress, or improve your overall well-being, we have something for you.</p>
+
+        <!-- Program Categories -->
+        <div class="program-categories">
+            <div class="category">
+                <h3>Fitness</h3>
+                <p>Personalized workout plans, fitness challenges, and virtual coaching.</p>
+                <img src="../images/fitnessprogram.jpg" alt="Fitness Program Image" class="program-image">
+            </div>
+            <div class="category">
+                <h3>Mental Health</h3>
+                <p>Mindfulness, meditation sessions, and mental well-being support.</p>
+                <img src="../images/mentalhealth.jpg" alt="Mental Health Program Image" class="program-image"> <!-- Mental Health Image -->
+            </div>
+            <div class="category">
+                <h3>Nutrition</h3>
+                <p>Healthy meal plans, recipe guides, and nutritional coaching.</p>
+                <img src="../images/nutrition.jpg" alt="Nutrition Program Image" class="program-image"> <!-- Nutrition Image -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Program Quiz -->
+    <section class="program-quiz">
+        <h2>Find the Right Program for You</h2>
+        <form action="#" method="POST" id="quiz-form">
+            <label for="goal">What is your main health goal?</label>
+            <select name="goal" id="goal" required>
+                <option value="fitness">Get Fit</option>
+                <option value="mental-health">Improve Mental Health</option>
+                <option value="nutrition">Eat Healthier</option>
+            </select>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+
+    <!-- Program Pricing and Details -->
+    <section class="program-pricing">
+        <h2>Program Pricing & Packages</h2>
+        <div class="pricing-plan">
+            <h3>Basic Plan</h3>
+            <p>$29/month</p>
+            <ul>
+                <li>Access to all basic content</li>
+                <li>Monthly webinars</li>
+                <li>Online community support</li>
+            </ul>
+            <a href="#join-form" class="cta-button">Join Now</a>
+        </div>
+        <div class="pricing-plan">
+            <h3>Premium Plan</h3>
+            <p>$59/month</p>
+            <ul>
+                <li>Everything in Basic Plan</li>
+                <li>Personalized coaching sessions</li>
+                <li>Exclusive content & events</li>
+            </ul>
+            <a href="#join-form" class="cta-button">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Program Registration Form -->
+    <section id="join-form" class="program-registration">
+        <h2>Join Now</h2>
+        <p>Fill out the form below to sign up for one of our programs and start your journey toward better health.</p>
+        <form id="registration-form" action="submit_form.php" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            <div class="error-message" id="name-error"></div> <!-- Error message for name -->
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="email-error"></div> <!-- Error message for email -->
+
+            <label for="program">Select Program</label>
+            <select name="program" id="program" required>
+                <option value="">Select Program</option>
+                <option value="fitness">Fitness Program</option>
+                <option value="mental-health">Mental Health Program</option>
+                <option value="nutrition">Nutrition Program</option>
+            </select>
+            <div class="error-message" id="program-error"></div> <!-- Error message for program selection -->
+
+            <label for="payment">Payment Method</label>
+            <select name="payment" id="payment" required>
+                <option value="">Select Payment Method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            <div class="error-message" id="payment-error"></div> <!-- Error message for payment -->
+
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Health and Wellness. All rights reserved.</p>
+        <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

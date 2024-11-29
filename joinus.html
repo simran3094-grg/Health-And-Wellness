@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us Now - Social Wellbeing</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main CSS file (optional) -->
+    <style>
+        /* Modal Content Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .join-now-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #333;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .back-btn {
+            background-color: #f44336;
+        }
+
+        .back-btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Join Now Form Section -->
+    <div class="join-now-container">
+        <h2>Join Us Now</h2>
+        <form action="#" method="POST" id="joinForm">
+
+            <!-- Personal Information Section -->
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <!-- Fitness Program Section -->
+            <div class="form-group">
+                <label for="fitnessProgram">Select a Fitness Program:</label>
+                <select id="fitnessProgram" name="fitnessProgram">
+                    <option value="yoga">Yoga</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="strengthTraining">Strength Training</option>
+                    <option value="pilates">Pilates</option>
+                    <option value="zumba">Zumba</option>
+                </select>
+            </div>
+
+            <!-- Health Goals Section -->
+            <div class="form-group">
+                <label for="healthGoals">What are your main health goals?</label>
+                <textarea id="healthGoals" name="healthGoals" rows="4" required></textarea>
+            </div>
+
+            <!-- Interests Section -->
+            <div class="form-group">
+                <label for="interests">Select Your Interests:</label><br>
+                <input type="checkbox" id="fitness" name="interests" value="fitness">
+                <label for="fitness">Fitness</label><br>
+                <input type="checkbox" id="nutrition" name="interests" value="nutrition">
+                <label for="nutrition">Nutrition</label><br>
+                <input type="checkbox" id="mentalHealth" name="interests" value="mentalHealth">
+                <label for="mentalHealth">Mental Health</label><br>
+                <input type="checkbox" id="wellness" name="interests" value="wellness">
+                <label for="wellness">Wellness</label><br>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <a href="socialwellbeing.html">
+                    <button type="button" class="back-btn">Back</button>
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // JS to handle form submission (Optional, if you want to handle it locally)
+        document.getElementById('joinForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form from refreshing the page
+            alert('Thank you for joining us! We will be in touch soon.');
+            this.reset(); // Reset form fields after submission
+        });
+    </script>
+</body>
+
+</html>

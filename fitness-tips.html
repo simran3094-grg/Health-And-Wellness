@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tips</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="fitnesstips">
+    <!-- Fitness Quiz Section -->
+    <section id="quiz-section">
+        <h2>Interactive Fitness Quiz</h2>
+        <p>Take this quiz to assess your fitness level.</p>
+        <form id="fitness-quiz">
+            <div>
+                <label for="age">How old are you?</label>
+                <input type="number" id="age" required>
+            </div>
+            <div>
+                <label for="activity-level">How active are you?</label>
+                <select id="activity-level">
+                    <option value="low">Low</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <div>
+                <label for="health-habits">Do you follow healthy habits? (e.g., regular exercise, good diet)</label>
+                <input type="checkbox" id="health-habits">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="quiz-result"></div>
+        <!-- Quiz Button -->
+        <button class="quiz-btn" onclick="window.location.href='quiz.html'">Start Quiz</button>
+    </section>
+
+
+<!-- Workout Plans Section -->
+<section id="workout-plans">
+    <h2>Workout Plans for Different Levels</h2>
+    
+    <!-- Beginner Plan -->
+    <div class="workout-plan">
+        <h3>Beginner Plan</h3>
+        <img src="../images/beginner_workout.jpg" alt="Beginner Workout Plan" style="width:100%; height:auto;">
+        <p>This beginner plan is designed to help you ease into fitness. It includes basic exercises to build strength, flexibility, and endurance.</p>
+    </div>
+    
+    <!-- Intermediate Plan -->
+    <div class="workout-plan">
+        <h3>Intermediate Plan</h3>
+        <img src="../images/intermediate_workout.jpg" alt="Intermediate Workout Plan" style="width:100%; height:auto;">
+        <p>The intermediate plan builds on your fitness foundation, offering more challenging exercises to improve strength, speed, and muscle tone.</p>
+    </div>
+    
+    <!-- Advanced Plan -->
+    <div class="workout-plan">
+        <h3>Advanced Plan</h3>
+        <img src="../images/advanced_workout.jpg" alt="Advanced Workout Plan" style="width:100%; height:auto;">
+        <p>This advanced plan is for those who are ready to push their limits with high-intensity exercises, focused on muscle growth and overall performance.</p>
+    </div>
+</section>
+
+
+    <!-- Nutrition Tips Section -->
+    <section id="nutrition-tips">
+        <h2>Nutrition Tips & Meal Plans</h2>
+        <p>Learn about healthy meal prepping and balanced diet tips.</p>
+        <ul>
+            <li>Eat a variety of fruits and vegetables 🥗</li>
+            <li>Hydrate yourself with plenty of water 💧</li>
+            <li>Balance your macronutrients: carbs, protein, and fats 🍗🥔</li>
+        </ul>
+    </section>
+
+  <!-- Video Demonstrations Section -->
+<section id="video-demonstrations">
+    <h2>Video Demonstrations of Exercises</h2>
+    <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/cbKkB3POqaY" 
+            title="YouTube video player" 
+            allowfullscreen>
+    </iframe>
+</section>
+
+
+<!-- Fitness Tips Section -->
+<section id="fitness-tips" class="fitnesstips">
+    <h2>Fitness Articles & Expert Tips</h2>
+    <div class="tips-container">
+        <!-- Tip 1 -->
+        <div class="tip">
+            <img src="../images/path_to_image1.jpg" alt="How to Prevent Injuries During Workouts" class="tip-img">
+            <h3>How to Prevent Injuries During Workouts</h3>
+            <p>Learn the best practices to avoid common injuries while staying fit.</p>
+        </div>
+
+        <!-- Tip 2 -->
+        <div class="tip">
+            <img src="../images/path_to_image2.jpg" alt="5 Myths About Dieting" class="tip-img">
+            <h3>5 Myths About Dieting</h3>
+            <p>Debunking the most common myths surrounding dieting and nutrition.</p>
+        </div>
+
+        <!-- Tip 3 -->
+        <div class="tip">
+            <img src="../images/path_to_image3.jpg" alt="The Science of Building Muscle" class="tip-img">
+            <h3>The Science of Building Muscle</h3>
+            <p>Understand the science behind muscle growth and how to maximize your results.</p>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Success Stories Section -->
+    <section id="success-stories">
+        <h2>Success Stories</h2>
+        <div class="testimonial">
+            <p>"I lost 20 pounds by following the fitness plan and nutrition tips. I feel better than ever!" - John Doe</p>
+        </div>
+    </section>
+    </div>
+    <!-- External Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,3417 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background-color: #22c952;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+/* Navbar General Styles */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.logo-img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    margin-right: 10px; /* Space between logo and text */
+    border-radius: 50%; /* Optional for rounded logo */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #155bbd;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #c7edc9;
+    color: black;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+/* Introductory Text Section */
+#health-intro {
+    background-color: #f4f4f9; 
+    padding: 40px 20px; 
+    text-align: center; 
+    margin-bottom: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#health-intro h2 {
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+    color: #333; /* Darker text color */
+    font-size: 28px; /* Setting font size */
+    margin-bottom: 15px; /* Space between the heading and paragraph */
+    font-weight: 600; /* Bold heading */
+}
+
+#health-intro p {
+    font-family: 'Poppins', sans-serif; /* Same font family as the heading */
+    color: #555; /* Lighter gray for the paragraph text */
+    font-size: 18px; /* Slightly smaller font size for the paragraph */
+    line-height: 1.6; /* Increased line height for readability */
+    max-width: 800px; /* Limit the width of the paragraph for better readability */
+    margin: 0 auto; /* Centering the paragraph */
+}
+
+/* General Styling for the Section */
+.feature-card-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.feature-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+/* Ripple Effect */
+.ripple {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(42, 157, 143, 0.6);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear;
+    pointer-events: none;
+}
+
+@keyframes ripple-animation {
+    to {
+        transform: scale(20);
+        opacity: 0;
+    }
+}
+#features .feature-card a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent element */
+}
+
+#features .feature-card a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Hover Effects */
+.feature-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    color: #2a9d8f;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #2a9d8f, #e9c46a);
+    opacity: 0.2;
+    z-index: -1;
+    transition: top 0.3s ease;
+}
+
+.feature-card:hover::before {
+    top: 0;
+}
+/* Explore Features Section */
+#explore-features {
+    background-color: #f4f4f9; /* Light background color for contrast */
+    padding: 40px 20px; /* Add some padding around the content */
+    text-align: center; /* Center align the text */
+    margin-bottom: 30px; /* Space below the section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+#explore-features h2 {
+    font-family: 'Poppins', sans-serif; /* Stylish font */
+    color: #333; /* Darker text color for better contrast */
+    font-size: 28px; /* Set font size for the heading */
+    margin-bottom: 15px; /* Space between heading and paragraph */
+    font-weight: 600; /* Bold text for the heading */
+}
+
+#explore-features p {
+    font-family: 'Poppins', sans-serif; /* Same font family as the heading */
+    color: #555; /* Lighter gray for the paragraph text */
+    font-size: 18px; /* Slightly smaller font size for the paragraph */
+    line-height: 1.6; /* Increased line height for readability */
+    max-width: 800px; /* Limit the width of the paragraph for better readability */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+/* Icon for Each Card (Optional) */
+.feature-card-icon {
+    font-size: 3rem;
+    color: #264653;
+    margin-bottom: 10px;
+}
+
+/* Features Section */
+.features {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.feature-card {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #333;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+footer .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #4CAF50;
+}
+
+footer .footer-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+/* Additional Pages Section */
+#additional-pages {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.additional-pages-header h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.additional-pages-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.additional-pages-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.page-card {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.page-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+.page-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007BFF; /* Adjust for branding */
+}
+
+.page-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.page-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* General styles for About Us page */
+.about {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.about h2, .about h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 40px;
+} 
+.team h3 {
+    text-align: center; /* Center-align the text */
+    margin: 0 auto 40px; /* Optional: Add some spacing below the heading */
+    font-size: 2.5rem; /* Optional: Increase the font size */
+    font-weight: bold; /* Optional: Make the font bold */
+    color: #4CAF50; /* Optional: Adjust the color */
+}
+ 
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.team {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 30px; 
+    margin: 40px auto; 
+    max-width: 1200px; 
+    padding: 20px;
+}
+.team-member {
+    text-align: center; 
+    width: 200px; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05); 
+}
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover; 
+}
+.team h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4CAF50; 
+}
+
+}
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+    }
+
+    .team-member {
+        width: 100%; 
+    }
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.about, .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust width as needed */
+}
+.about, .blog {
+    margin: 20px auto;
+    padding: 20px;
+}
+.about, .blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about, .blog {
+    margin-top: 100px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Programs Page Styles */
+
+/* Program Overview Section */
+.program-overview {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.program-overview h2 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.program-overview p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Program Categories */
+.program-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.category {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.05);
+}
+
+.category h3 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.program-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Program Quiz Section */
+.program-quiz {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 5px solid #4CAF50;
+}
+
+.program-quiz h2 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#quiz-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#quiz-form label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#quiz-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#quiz-form button {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+#quiz-form button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Program Pricing Section */
+.program-pricing {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 5px solid #FFD700;
+}
+
+.program-pricing h2 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 40px;
+}
+
+.pricing-plan {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.pricing-plan:hover {
+    transform: scale(1.05);
+}
+
+.pricing-plan h3 {
+    font-size: 1.8rem;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.pricing-plan p {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.pricing-plan ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Program Registration Section */
+.program-registration {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 5px solid #4CAF50;
+}
+
+.program-registration h2 {
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.program-registration form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.program-registration label {
+    font-size: 1rem;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.program-registration input,
+.program-registration select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.program-registration button {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.program-registration button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Physical Health - Scoped to Physical Health Page */
+.physical-health body, 
+.physical-health h1, 
+.physical-health h2, 
+.physical-health h3, 
+.physical-health p, 
+.physical-health ul, 
+.physical-health li, 
+.physical-health a, 
+.physical-health button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling - Physical Health Page */
+.physical-health body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Intro Section Styling - Physical Health Page */
+.physical-health #intro {
+    background-color: #333;
+    color: #FFD700; /* Gold */
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.physical-health #intro h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.physical-health #intro p {
+    font-size: 1.2rem;
+}
+
+/* Section Styling - Physical Health Page */
+.physical-health section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles - Physical Health Page */
+.physical-health h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.physical-health h3 {
+    color: #FFD700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Workout Categories - Physical Health Page */
+.physical-health .workout-categories {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.physical-health .workout {
+    flex: 1 1 calc(33.33% - 20px);
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.physical-health .workout:hover {
+    transform: scale(1.05);
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.physical-health .workout img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Nutrition Tips Section */
+#nutrition-tips {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#nutrition-tips h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#nutrition-tips p {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+#nutrition-tips img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+#nutrition-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+#nutrition-tips ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#nutrition-tips ul li:before {
+    content: "✔";
+    color: #4CAF50;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* BMI Calculator Section */
+#bmi-calculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#bmi-calculator label {
+    font-weight: bold;
+    color: #333;
+}
+
+#bmi-calculator input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#bmi-calculator button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#bmi-calculator button:hover {
+    background-color: #0056b3;
+}
+
+#bmi-result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+
+/* Footer - Physical Health Page */
+.physical-health footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsiveness - Physical Health Page */
+@media (max-width: 768px) {
+    .physical-health .workout-categories {
+        flex-direction: column;
+    }
+
+    .physical-health .workout {
+        flex: 1 1 100%;
+    }
+
+    .physical-health #nutrition-tips {
+        padding: 20px;
+    }
+
+    .physical-health #nutrition-tips h2 {
+        font-size: 2rem;
+    }
+
+    .physical-health #nutrition-tips p {
+        font-size: 1rem;
+    }
+
+    .physical-health #nutrition-tips ul li {
+        font-size: 1rem;
+    }
+}
+
+.physical-health #nutrition-tips img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Base Styles - Scoped to .mental-health */
+/* Center and add spacing for the main heading */
+.mental-health .main-heading {
+    text-align: center;
+    margin-top: 50px; /* Adds space from the top */
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Add spacing between the headings */
+.mental-health h2 {
+    margin-top: 30px; /* Adds space between "Mental Health Awareness" and "What is Mental Health?" */
+    margin-bottom: 20px; /* Adjusts spacing between this heading and the content */
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+}
+#conditions {
+    display: block;  /* Ensure it's not set to 'none' */
+}
+
+/* Ensures spacing and centering for the second heading and its content */
+.mental-health .what-is-mental-health {
+    text-align: center;
+    margin-bottom: 40px; /* Adds space below the "What is Mental Health?" section */
+}
+
+/* Optional: Adds padding to ensure a clean and spacious layout */
+.mental-health .content-section {
+    padding: 20px;
+}
+/* Image Styles - Adjust max-width for smaller images */
+.mental-health img {
+    max-width: 40%; /* Change this percentage to make images smaller */
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: block; /* Ensures images are block-level for better control */
+    margin-left: auto;
+    margin-right: auto; /* Centers the images */
+}
+
+/* Media Queries for smaller screens */
+@media screen and (max-width: 768px) {
+    .mental-health img {
+        max-width: 80%; /* Adjust this to make images smaller on medium screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mental-health img {
+        max-width: 100%; /* Ensures images are fully responsive on small screens */
+    }
+}
+.mental-health-image {
+    max-width: 50%;  /* Adjust this value to make the image smaller */
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+}
+
+.mental-health {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light Gray background for page */
+    color: #333; /* Dark Gray text */
+}
+
+/* Header Styles */
+.mental-health header {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Main Title */
+.mental-health header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Section Styles */
+.mental-health section {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 1000px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Section Titles */
+.mental-health h2 {
+    font-size: 2em;
+    color: #4CAF50; /* Green for headings */
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+/* Paragraph and Text */
+.mental-health p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Unordered Lists */
+.mental-health ul {
+    margin-left: 20px;
+    list-style-type: square;
+}
+
+/* Link Styles */
+.mental-health a {
+    color: #FFD700; /* Gold links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.mental-health a:hover {
+    color: #4CAF50; /* Green hover effect for links */
+}
+
+/* Image Styles */
+.mental-health img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Blockquote Styles */
+.mental-health blockquote {
+    background-color: #f9f9f9;
+    padding: 15px;
+    font-style: italic;
+    border-left: 5px solid #4CAF50;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+/* Footer Styles */
+.mental-health footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 15px;
+    text-align: center;
+}
+
+/* Button Styles */
+.mental-health .btn {
+    background-color: #007bff; /* Blue buttons */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mental-health .btn:hover {
+    background-color: #4CAF50; /* Green hover effect */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Card Styles */
+.mental-health .card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.mental-health .card:hover {
+    transform: scale(1.05); /* Slightly enlarge cards on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .mental-health header h1 {
+        font-size: 2em;
+    }
+
+    .mental-health section {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .mental-health h2 {
+        font-size: 1.8em;
+    }
+
+    .mental-health .btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mental-health header h1 {
+        font-size: 1.6em;
+    }
+
+    .mental-health h2 {
+        font-size: 1.6em;
+    }
+
+    .mental-health .btn {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+
+    .mental-health section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .mental-health img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* .socialwellbeing Styles */
+.socialwellbeing {
+    background-color: #dde6eb; /* Light gray background */
+    padding: 20px;
+}
+
+/* Hero Section */
+.socialwellbeing #hero {
+    background-color: #007bff; /* Blue background for hero section */
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.socialwellbeing #hero .hero-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Photo Gallery */
+.socialwellbeing #activity-gallery {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.socialwellbeing #activity-gallery h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.socialwellbeing .gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.socialwellbeing .gallery-item {
+    width: 30%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.socialwellbeing .gallery-item:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+.socialwellbeing .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Interactive Poll */
+.socialwellbeing #social-poll {
+    background-color: #dde6eb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.socialwellbeing #social-poll h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.socialwellbeing #social-poll input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Interactive Quiz */
+.socialwellbeing #quiz {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.socialwellbeing #quiz button {
+    background-color: #4CAF50; /* Green button */
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.socialwellbeing #quiz button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Benefits Section */
+.socialwellbeing #benefits {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.socialwellbeing #benefits h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.socialwellbeing .icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.socialwellbeing .icon-item img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
+}
+
+.socialwellbeing .icon-item:hover img {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Testimonials Section */
+.socialwellbeing #testimonials {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.socialwellbeing #testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.socialwellbeing .testimonial-slider {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    justify-content: center;
+}
+
+.socialwellbeing .testimonial-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.socialwellbeing .testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.socialwellbeing .testimonial-item p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.socialwellbeing .testimonial-item span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Call to Action Section */
+.socialwellbeing #cta {
+    background-color: #ff9800; /* Orange CTA background */
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.socialwellbeing #cta h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.socialwellbeing #cta p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.socialwellbeing #cta .cta-button {
+    background-color: #fff;
+    color: #ff9800;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.socialwellbeing #cta .cta-button:hover {
+    background-color: #ff5722; /* Darker orange */
+    transform: scale(1.05);
+}
+
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* Centering the Section and Styling */
+.socialwellbeing #stay-active {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f7f7f7; /* Light gray background */
+    margin: 0 auto;
+}
+
+.socialwellbeing #stay-active h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.socialwellbeing #stay-active p {
+    font-size: 1.5em;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.socialwellbeing .activity-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow wrapping if there’s not enough space */
+}
+
+.socialwellbeing .activity-option {
+    background-color: #007bff; /* Blue button */
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: center;
+    width: 180px;
+}
+
+.socialwellbeing .activity-option:hover {
+    background-color: #45a049; /* Green on hover */
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Submit Button */
+.socialwellbeing .submit-btn {
+    background-color: #ff9800; /* Orange button */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    margin-top: 20px;
+}
+
+.socialwellbeing .submit-btn:hover {
+    background-color: #ff5722; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* General Fitness Tips Page Styling */
+.fitnesstips {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light Gray Background */
+    color: #333; /* Dark Text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Intro Section Styling */
+.fitnesstips #intro {
+    background: linear-gradient(135deg, #FFD700, #FF8C00); /* Gold to Orange Gradient */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid #FFA500; /* Orange Border */
+}
+
+.fitnesstips #intro h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle Shadow */
+}
+
+.fitnesstips #intro p {
+    font-size: 1.3rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Fitness Quiz Section Styling */
+.fitnesstips #quiz-section {
+    background-color: #ffffff; /* White Card Background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Soft Shadow */
+    max-width: 800px;
+    margin: 30px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fitnesstips #quiz-section:hover {
+    transform: scale(1.03); /* Slight Zoom Effect */
+}
+
+.fitnesstips #quiz-section h2 {
+    font-size: 2.2rem;
+    color: #4CAF50; /* Green */
+    margin-bottom: 25px;
+    border-bottom: 3px solid #4CAF50; /* Green Border */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Quiz Form Styling */
+.fitnesstips #fitness-quiz div {
+    margin-bottom: 20px;
+}
+
+.fitnesstips #fitness-quiz label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+.fitnesstips #fitness-quiz input,
+.fitnesstips #fitness-quiz select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.fitnesstips #fitness-quiz input:focus,
+.fitnesstips #fitness-quiz select:focus {
+    border-color: #4CAF50; /* Green Focus Border */
+    outline: none;
+}
+
+/* Button Styling */
+.fitnesstips .quiz-btn {
+    background-color: #4CAF50; /* Green Button */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.fitnesstips .quiz-btn:hover {
+    background-color: #45a049; /* Slightly Darker Green */
+    transform: scale(1.05); /* Zoom Effect */
+}
+
+.fitnesstips .quiz-btn:active {
+    transform: scale(0.98); /* Subtle Press Effect */
+}
+
+
+/* General Styles for Workout Plans Section */
+#workout-plans {
+    background-color: #f4f4f9; /* Light background for the section */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#workout-plans h2 {
+    font-size: 2.5rem;
+    color: #4CAF50; /* Green color for the header */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Styling for Each Workout Plan */
+.workout-plan {
+    background-color: #ffffff; /* White background for each plan */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.workout-plan:hover {
+    transform: translateY(-10px); /* Lift the element on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.workout-plan h3 {
+    font-size: 2rem;
+    color: #FF5733; /* Red-Orange color for plan titles */
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+/* Styling for Workout Plan Image */
+.workout-plan img {
+    width: 80%; /* Adjust to 80% of the container width (or another value that works) */
+    max-width: 600px; /* Limit the maximum width to 600px */
+    height: auto; /* Keep the aspect ratio intact */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+    display: block; /* Ensure the image is a block element for better control */
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto;
+}
+
+.workout-plan img:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+
+
+/* Styling for Workout Plan Description */
+.workout-plan p {
+    font-size: 1.1rem;
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #workout-plans h2 {
+        font-size: 2rem;
+    }
+
+    .workout-plan {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .workout-plan h3 {
+        font-size: 1.8rem;
+    }
+
+    .workout-plan p {
+        font-size: 1rem;
+    }
+}
+
+
+.fitnesstips .download-btn:hover {
+    background-color: #FF4511;
+}
+
+/* Nutrition Tips Section */
+.fitnesstips #nutrition-tips {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fitnesstips #nutrition-tips h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.fitnesstips #nutrition-tips ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.fitnesstips #nutrition-tips ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Video Demonstrations Section */
+.fitnesstips #video-demonstrations {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fitnesstips #video-demonstrations h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+
+/* Fitness Tips Section */
+.fitnesstips {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.fitnesstips h2 {
+    font-size: 2.5rem;
+    color: #FF5722;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Tips Container */
+.tips-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the tips */
+    flex-wrap: wrap; /* Makes the layout responsive */
+    margin-top: 20px;
+}
+
+/* Individual Tip */
+.tip {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 22%; /* Each tip will take up 22% of the width, to fit 4 items */
+    text-align: center;
+}
+
+.tip-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Tip Title and Text */
+.tip h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tip p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .tips-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tip {
+        width: 80%; /* On smaller screens, each tip will take up 80% of the width */
+        margin-bottom: 20px;
+    }
+
+    .fitnesstips h2 {
+        font-size: 2rem;
+    }
+
+    .tip h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Success Stories Section */
+.fitnesstips #success-stories {
+    background-color: #ffffff;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fitnesstips #success-stories h2 {
+    color: #FF5733;
+    margin-bottom: 20px;
+}
+
+.fitnesstips .testimonial {
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .fitnesstips #quiz-section,
+    .fitnesstips #workout-plans,
+    .fitnesstips #nutrition-tips,
+    .fitnesstips #video-demonstrations,
+    .fitnesstips #motivational-quotes,
+    .fitnesstips #fitness-articles,
+    .fitnesstips #success-stories {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .fitnesstips .download-btn,
+    .fitnesstips .quiz-btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+/* Quiz Container */
+.quiz {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+.quiz h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #FF5722;
+    margin-bottom: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid #FFAB91;
+    padding-bottom: 10px;
+}
+
+/* Form Label Styling */
+.quiz label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Input, Select, and Textarea Styling */
+.quiz input[type="text"],
+.quiz input[type="number"],
+.quiz select,
+.quiz textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.quiz input:focus,
+.quiz select:focus,
+.quiz textarea:focus {
+    border-color: #FF5722;
+    outline: none;
+}
+
+/* Checkbox and Radio Groups */
+.quiz .checkbox-group label,
+.quiz .radio-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #555;
+}
+
+.quiz input[type="checkbox"],
+.quiz input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Submit Button */
+.quiz .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.quiz .submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .quiz {
+        padding: 15px;
+    }
+
+    .quiz h1 {
+        font-size: 2rem;
+    }
+}
+/* Main Wellness Section */
+.wellness {
+    text-align: center;
+    padding: 20px;
+	background-color: #e8f7e6 
+}
+
+/* Main Header */
+.wellness h1 {
+    background-color: #32a852; /* Green Background */
+    color: #fff; /* White Text */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.wellness h1:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    background-color: #278d3b; /* Darker Green on Hover */
+}
+
+/* Wellness Info Section */
+.wellness .wellness-info {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.wellness .wellness-info:hover {
+    color: #32a852; /* Green color on hover */
+}
+
+/* Article Categories Section */
+.wellness #article-categories {
+    margin-bottom: 40px;
+}
+
+.wellness #article-categories h2 {
+    background-color: #1d8cd1; /* Light Blue Background */
+    color: #fff; /* White Text */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wellness #article-categories h2:hover {
+    background-color: #5fa7c7; /* Darker Blue on Hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wellness .category-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.wellness .category {
+    background-color: #c7edca; /* Very Light Green Container */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 22%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+}
+
+.wellness .category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #b5d7b5; /* Slightly darker green on hover */
+}
+
+.wellness .category h3 {
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.wellness .category:hover h3 {
+    color: #278d3b; /* Darker Green on Hover */
+}
+
+/* Fixing images in the category box */
+.wellness .category img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 200px; /* Limit the height to avoid overflow */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+}
+
+/* Featured Article Section */
+.wellness #featured-article {
+    margin-bottom: 40px;
+}
+
+.wellness #featured-article h2 {
+    background-color: #7ec8e3; /* Light Blue Background */
+    color: #fff; /* White Text */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wellness #featured-article h2:hover {
+    background-color: #5fa7c7; /* Darker Blue on Hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wellness .featured-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.wellness .featured {
+    background-color: #c1e6c1; /* Very Light Green Container */
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    text-align: center;
+}
+
+.wellness .featured:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #b5d7b5; /* Slightly darker green on hover */
+}
+
+.wellness .featured h3 {
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.wellness .featured:hover h3 {
+    color: #278d3b; /* Darker Green on Hover */
+}
+
+/* Featured Article Section Image */
+.wellness .featured img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Resource Library Section */
+#resource-library {
+    background-color: #ffffff; /* White background for the section */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#resource-library h2 {
+    color: #6f42c1; /* Purple text for the header */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Resource Library Section */
+#resource-library {
+    background-color: #ffffff; /* White background for the section */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#resource-library h2 {
+    color: #6f42c1; /* Purple text for the header */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+/* Resources Container */
+.resources-container {
+    display: flex;
+    justify-content: space-between; /* Ensures that boxes are spaced evenly */
+    gap: 20px; /* Adds some space between the boxes */
+    flex-wrap: wrap; /* Allows the items to wrap if the screen is too small */
+}
+
+/* Individual Resource */
+.resource {
+    background-color: #e8e4f0; /* Light purple background for each resource box */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 25%; /* Reduced width to make boxes fit better side by side */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Resource */
+.resource:hover {
+    transform: translateY(-10px); /* Slight elevation on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow effect */
+}
+
+/* Resource Image */
+.resource-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Resource Title */
+.resource h3 {
+    color: #6f42c1; /* Purple text for the resource title */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Resource Description */
+.resource p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Download Button */
+.resource a button {
+    background-color: #007bff; /* Blue background for the download button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* Resource Image */
+.resource-img {
+    width: 100%; /* Ensures the image takes up the full width of its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensures the image covers the container, filling it without distortion */
+}
+
+
+/* Hover Effect for Download Button */
+.resource a button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Button enlargement on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .resources-container {
+        flex-direction: column; /* Stack the resources vertically on smaller screens */
+        align-items: center;
+    }
+
+    .resource {
+        width: 80%; /* Make the resources wider on small screens */
+        margin-bottom: 20px;
+    }
+}
+
+/* Inspirational Stories Section */
+#inspirational-stories {
+    background-color: #f9f9f9; /* Light background for the section */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#inspirational-stories h2 {
+    color: #6f42c1; /* Purple text for the header */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+#inspirational-stories p {
+    color: #555;
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+/* Stories Container */
+.stories-container {
+    display: flex;
+    justify-content: space-between; /* Ensures stories are side by side */
+    gap: 20px; /* Adds space between the stories */
+    flex-wrap: nowrap; /* Ensures no wrapping, both stories stay side by side */
+}
+
+/* Individual Story */
+.story {
+    background-color: #f0f0f0; /* Very light background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 48%; /* Each story takes up 48% of the container width */
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Story */
+.story:hover {
+    transform: translateY(-5px); /* Slight elevation on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow effect */
+}
+
+/* Story Image */
+.story img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Story Title */
+.story h3 {
+    color: #6f42c1; /* Purple text for the story title */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Story Description */
+.story p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .stories-container {
+        flex-direction: column; /* Stack the stories vertically on smaller screens */
+        align-items: center;
+    }
+
+    .story {
+        width: 80%; /* Make the stories wider on small screens */
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Wellness Challenges Section */
+.wellness #wellness-challenges {
+    margin-bottom: 40px;
+}
+
+.wellness #wellness-challenges h2 {
+    background-color: #7ec8e3; /* Light Blue Background */
+    color: #fff; /* White Text */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wellness #wellness-challenges h2:hover {
+    background-color: #5fa7c7; /* Darker Blue on Hover */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.wellness .challenges-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.wellness .challenge {
+    background-color: #c1e6c1; /* Very Light Green Container */
+    padding: 20px;
+    margin: 10px;
+    width: 22%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.wellness .challenge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    background-color: #b5d7b5; /* Slightly darker green on hover */
+}
+
+.wellness .challenge h3 {
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.wellness .challenge:hover h3 {
+    color: #278d3b; /* Darker Green on Hover */
+}
+/* Wellness Tips Container */
+#wellness-tips {
+    background-color: #f4f4f9; /* Light background for the section */
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#wellness-tips h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.tips-container ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+.tips-container .tip-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.tips-container .tip-item::before {
+    content: '✔'; /* Checkmark symbol */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #32a852; /* Green color for the tick */
+    font-size: 1.5em;
+    line-height: 1.4;
+    transform: translateY(2px);
+}
+
+.tips-container .tip-item:hover {
+    color: #278d3b; /* Darker green on hover */
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .wellness .category,
+    .wellness .featured,
+    .wellness .resource,
+    .wellness .challenge {
+        width: 80%; /* 80% width on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .wellness .category,
+    .wellness .featured,
+    .wellness .resource,
+    .wellness .challenge {
+        width: 100%; /* 100% width on mobile devices */
+    }
+
+    .wellness h1 {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .wellness .category-container,
+    .wellness .featured-container,
+    .wellness .resources-container,
+    .wellness .challenges-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wellness .category,
+    .wellness .featured,
+    .wellness .resource,
+    .wellness .challenge {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .wellness h1 {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    .wellness #article-categories h2,
+    .wellness #featured-article h2,
+    .wellness #resource-library h2,
+    .wellness #wellness-challenges h2 {
+        font-size: 1.2em;
+        padding: 12px;
+    }
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 480px) {
+    .wellness h1 {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .wellness .category,
+    .wellness .featured,
+    .wellness .resource,
+    .wellness .challenge {
+        width: 100%;
+    }
+
+    .wellness .category-container,
+    .wellness .featured-container,
+    .wellness .resources-container,
+    .wellness .challenges-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wellness #article-categories h2,
+    .wellness #featured-article h2,
+    .wellness #resource-library h2,
+    .wellness #wellness-challenges h2 {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+/* General Page Styling */
+.healthy-recipies {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header Styling */
+.healthy-recipies header {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #76c7c0; /* Header background color */
+    color: white;
+    position: relative; /* Ensure the header is positioned correctly */
+}
+
+/* Remove animation from header */
+.healthy-recipies header {
+    animation: none; /* Ensure no animation is applied to the header */
+}
+
+.healthy-recipies header h1 {
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.healthy-recipies header p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+/* Featured Recipes Section */
+.healthy-recipies #featured-recipes {
+    padding: 50px 20px;
+    background-color: #e4f5f3;
+    animation: none; /* Ensure no animation is applied to this section */
+}
+
+/* Other sections */
+.healthy-recipies #featured-recipes h2,
+.healthy-recipies #engaging-ideas h2,
+.healthy-recipies #ingredient-search h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.healthy-recipies .recipes-container,
+.healthy-recipies .ideas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Recipe Cards */
+.healthy-recipies .recipe-card,
+.healthy-recipies .idea-card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.healthy-recipies .recipe-card:hover,
+.healthy-recipies .idea-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.healthy-recipies .recipe-card img,
+.healthy-recipies .idea-card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.healthy-recipies .recipe-card h3,
+.healthy-recipies .idea-card h3 {
+    font-size: 1.5rem;
+    color: #2d2d2d;
+    margin: 15px 0 10px;
+}
+
+.healthy-recipies .recipe-card p,
+.healthy-recipies .idea-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.healthy-recipies .recipe-card h4,
+.healthy-recipies .idea-card h4 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+.healthy-recipies .recipe-card ul,
+.healthy-recipies .idea-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.healthy-recipies .recipe-card ul li,
+.healthy-recipies .idea-card ul li {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #777;
+}
+
+.healthy-recipies .recipe-card p,
+.healthy-recipies .idea-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Ingredient Search Section */
+.healthy-recipies #ingredient-search {
+    background-color: #f5f5f5;
+    padding: 50px 20px;
+    text-align: center;
+    animation: none; /* Ensure no animation is applied to this section */
+}
+
+.healthy-recipies #ingredient-search input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+    border: 2px solid #76c7c0;
+    border-radius: 5px;
+}
+
+.healthy-recipies #ingredient-search button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #76c7c0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.healthy-recipies #ingredient-search button:hover {
+    background-color: #61b7b3;
+}
+
+/* Footer Styling */
+.healthy-recipies footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Remove animations from featured, engaging ideas, and ingredient search sections */
+.healthy-recipies #featured-recipes,
+.healthy-recipies #engaging-ideas,
+.healthy-recipies #ingredient-search {
+    animation: none; /* Ensure no animation is applied to these sections */
+}
+
+/* General Styling for Blog */
+.blog {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.blog header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.blog header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.blog header p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.blog .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blog .blog-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.blog .post {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog .post img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.blog .post h2 {
+    font-size: 1.8rem;
+    margin-top: 15px;
+}
+
+.blog .post .post-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 10px 0;
+}
+
+.blog .post .post-excerpt {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.blog footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.blog footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .blog .blog-posts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog .blog-posts {
+        grid-template-columns: 1fr;
+    }
+
+    .blog header h1 {
+        font-size: 2rem;
+    }
+
+    .blog header p {
+        font-size: 1rem;
+    }
+}
+
+/* Hero Section */
+/* Header Styling */
+.lifestylehabits header, .events header, .successstories header {
+    text-align: center;
+    padding: 120px 20px; /* Adjust padding for spacing */
+    background-color: #007bff; /* Blue background color */
+    color: white;
+    position: relative; /* Ensure the header is positioned correctly */
+    margin-bottom: 20px; /* Add spacing below the header */
+}
+
+/* Header Title Styling */
+.lifestylehabits header h1, .events header h1, .successstories header h1 {
+    font-size: 3rem; /* Adjust font size */
+    margin: 0; /* Remove default margins */
+    letter-spacing: 1.5px; /* Add letter spacing */
+}
+
+/* Header Subtitle Styling */
+.lifestylehabits header p, .events header p, .successstories header p {
+    font-size: 1.25rem; /* Adjust font size for subtitle */
+    margin-top: 10px;
+}
+
+/* Additional Styling for Separation */
+.lifestylehabits, .events, .successstories {
+    padding-top: 20px; /* Add padding to separate the header */
+}
+
+/* Remove any animations from the header */
+.lifestylehabits header, .events header, .successstories header {
+    animation: none; /* Ensure no animations are applied */
+}
+
+
+}
+
+.lifestylehabits .hero p, .events .hero p, .successstories .hero p {
+    font-size: 1.5rem; /* Increased font size */
+    font-family: 'Arial', sans-serif; /* Change the font family */
+    margin-bottom: 30px;
+}
+
+.lifestylehabits .hero .btn, .events .hero .btn, .successstories .hero .btn {
+    background-color: #ffffff; /* White button */
+    color: #007bff; /* Blue text for button */
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.lifestylehabits .hero .btn:hover, .events .hero .btn:hover, .successstories .hero .btn:hover {
+    background-color: #0056b3;
+    color: white; /* Change text to white on hover */
+}
+
+/* Lifestyle Habits Section */
+.lifestylehabits, .events, .successstories {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 50px 20px; /* Add padding around the section */
+    text-align: center; /* Center align the text */
+    border-radius: 8px; /* Add rounded corners for a soft look */
+    margin: 30px auto;
+    max-width: 1200px; /* Limit the maximum width for better readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.lifestylehabits .section-title, .events .section-title, .successstories .section-title {
+    font-size: 2.5rem; /* Larger title */
+    color: #007bff; /* Blue color for the title */
+    margin-bottom: 15px;
+}
+
+.lifestylehabits .section-description, .events .section-description, .successstories .section-description {
+    font-size: 1.2rem; /* Slightly smaller for description */
+    color: #555; /* Dark gray color for text */
+    margin-bottom: 30px;
+}
+
+/* Articles Section */
+.lifestylehabits .articles h2, .events .articles h2, .successstories .articles h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.lifestylehabits .article, .events .article, .successstories .article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Article Image Styling */
+.lifestylehabits .article img, .events .article img, .successstories .article img {
+    display: block; /* Makes the image a block element (necessary for centering) */
+    margin: 0 auto; /* Centers the image */
+    width: 50%; /* Adjust the width of the image (feel free to change the percentage) */
+    max-width: 500px; /* Optional: to limit the max width */
+    height: auto; /* Keeps the image's aspect ratio */
+    object-fit: cover; /* Ensures the image fills the space without distortion */
+    border-radius: 5px; /* Keeps the rounded corners */
+}
+
+.lifestylehabits .text-content, .events .text-content, .successstories .text-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.lifestylehabits .text-content h3, .events .text-content h3, .successstories .text-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.lifestylehabits .text-content p, .events .text-content p, .successstories .text-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.lifestylehabits .read-more, .events .read-more, .successstories .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lifestylehabits .read-more:hover, .events .read-more:hover, .successstories .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Habit Tracker */
+.lifestylehabits .habit-tracker h2, .events .habit-tracker h2, .successstories .habit-tracker h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lifestylehabits .tracker-container, .events .tracker-container, .successstories .tracker-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.lifestylehabits .habit, .events .habit, .successstories .habit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #e9f7e9;
+    padding: 15px;
+    border-radius: 8px;
+    flex-basis: 30%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lifestylehabits .habit input, .events .habit input, .successstories .habit input {
+    margin-left: 15px;
+}
+
+.lifestylehabits button, .events button, .successstories button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.lifestylehabits button:hover, .events button:hover, .successstories button:hover {
+    background-color: #0056b3;
+}
+
+/* Quote Section */
+.lifestylehabits .quotes, .events .quotes, .successstories .quotes {
+    background-color: #f1f1f1;
+    padding: 40px 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.lifestylehabits .quote, .events .quote, .successstories .quote {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the quote image container */
+.lifestylehabits .quote-img-container, .events .quote-img-container, .successstories .quote-img-container {
+    display: flex;
+    justify-content: center; /* Center align the image */
+    margin-bottom: 50px;
+}
+
+/* Style for the image */
+.lifestylehabits .quote-img, .events .quote-img, .successstories .quote-img {
+    width: 200px; /* Set width of the image */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 80%; /* Make the image round */
+    object-fit: cover; /* Ensure the image doesn't stretch */
+}
+
+/* Quote text */
+.lifestylehabits .quote p, .events .quote p, .successstories .quote p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #555;
+}
+
+/* Footer Section */
+.lifestylehabits .footer, .events .footer, .successstories .footer {
+    text-align: center; /* Center align the footer text */
+    padding: 20px;
+    background-color: #000; /* Black background */
+    color: white;
+    margin-top: 50px;
+    font-size: 1rem; /* Adjust font size */
+    position: relative; /* Ensure footer stays centered within the layout */
+}
+
+
+
+/* Header Section */
+.success-header, .successstories-header {
+    text-align: center;
+    background-color: #48c3e8; /* A calm green background */
+    color: white;
+    padding: 50px 20px;
+    border-bottom: 6px solid #108bb0; /* Darker green border for emphasis */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.success-header h1, .successstories-header h1 {
+    font-size: 4rem; /* Larger font size for impact */
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    font-weight: 700; /* Bold text for attention */
+    letter-spacing: 2px; /* Slightly spread the letters */
+    color: #FFFFFF; /* Pure white for clean contrast */
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Make the title all uppercase */
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for better readability */
+}
+
+.success-header p, .successstories-header p {
+    font-size: 1.4rem; /* Slightly larger description for clarity */
+    font-family: 'Open Sans', sans-serif; /* Clean, modern sans-serif font */
+    color: #ffffff; /* White text for clarity */
+    font-weight: 400; /* Regular weight for readability */
+    margin-top: 0;
+    line-height: 1.6;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Light shadow to soften the text */
+}
+
+/* Success Stories Section */
+.success-stories, .successstories {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.top-row, .successstories .top-row {
+    display: flex;
+    gap: 30px;
+    justify-content: center; /* Align the items in the center */
+    flex-wrap: wrap; /* Ensure proper alignment on smaller screens */
+}
+
+.bottom-row, .successstories .bottom-row {
+    display: flex;
+    justify-content: center; /* Center Sarah's card */
+    text-align: center;
+    margin-top: 30px;
+}
+
+.success-card, .successstories .success-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 500px; /* Increased width */
+    height: auto; /* Adjust height based on content */
+}
+
+.success-card:hover, .successstories .success-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.success-image, .successstories .success-image {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio for Emma and John */
+    object-fit: cover;
+}
+
+/* For Sarah's Images */
+.image-group, .successstories .image-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center Sarah's images */
+}
+
+.image-group img, .successstories .image-group img {
+    width: 50%; /* Make both images equally half-width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Adjust images without distortion */
+}
+
+/* Story Content */
+.story-content, .successstories .story-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.story-content h3, .successstories .story-content h3 {
+    font-size: 1.6rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.story-content p, .successstories .story-content p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.story-content blockquote, .successstories .story-content blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+    border-left: 3px solid #007bff;
+    padding-left: 10px;
+}
+
+/* Footer Section */
+.success-footer, .successstories-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .top-row, .successstories .top-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .success-card, .successstories .success-card {
+        margin-bottom: 20px;
+    }
+
+    .image-group, .successstories .image-group {
+        flex-direction: column; /* Stack Sarah's images on smaller screens */
+        align-items: center;
+    }
+
+    .image-group img, .successstories .image-group img {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* General Styles */
+.events .body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a6bce0;
+    color: #333;
+}
+
+/* Hero Section */
+.events .hero {
+    background-color: #87a8de;
+    color: black;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.events .hero h1 {
+    font-size: 3rem;
+    font-family: 'Poppins', Merriweather; /* Apply the new font */
+    font-weight: 600; /* Make the font bold */
+}
+
+.events .hero p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif; /* Apply the new font */
+}
+
+/* Event Container */
+.events .event-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 20px; /* Space between the event cards */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.events .event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Card Images */
+.events .event-card img {
+    width: 100%; /* Make the image fill the container's width */
+    height: 300px; /* Adjust the height to a fixed value or any desired value */
+    object-fit: contain; /* Ensure the entire image fits inside the container */
+    border-radius: 8px 8px 0 0; /* Keep rounded corners for the top */
+}
+
+/* Card Titles and Details */
+.events .event-card h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin: 15px 0;
+    font-family: 'Montserrat', sans-serif; /* Change the font of the event titles */
+}
+
+/* Card Text */
+.events .event-card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Hover Effect - Moving the Card */
+.events .event-card:hover {
+    transform: translateY(-10px); /* Move the card up slightly */
+}
+
+.events .event-card:hover h3 {
+    color: #FF6347; /* Change color of header text on hover */
+    font-size: 1.6rem; /* Make the header slightly larger on hover */
+}
+
+.events .event-card:hover p {
+    color: #666; /* Darker text color for description on hover */
+}
+
+/* Button Style */
+.events .event-card .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.events .event-card .btn:hover {
+    background-color: #388E3C;
+}
+
+/* Registration Form Container */
+.events .registration-form-container {
+    background-color: white;
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.events .registration-form-container h2 {
+    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.events #registration-form input,
+.events #registration-form select,
+.events #registration-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Submit Button */
+.events #registration-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.events #registration-form button:hover {
+    background-color: #45a049;
+}
+
+/* Make the form responsive */
+@media (max-width: 768px) {
+    .events .registration-form-container {
+        width: 90%;
+    }
+}
+
+/* Footer Section */
+.events .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+/* Contact Section */
+.contact-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Contact Us Heading Style */
+.contact-section h2 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: #131414; /* black background */
+    color: white; /* White text color */
+    padding: 10px;
+    border-radius: 5px; /* Optional: to round corners */
+    display: inline-block; /* Centers the heading */
+}
+
+
+.contact-section h2 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    margin: 20px;
+}
+
+.contact-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 16px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form-container input,
+.contact-form-container textarea,
+.contact-form-container select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact-form-container button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form-container button:hover {
+    background-color: #45a049;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+
+

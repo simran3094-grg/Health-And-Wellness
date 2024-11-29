@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Habits</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="lifestylehabits">
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Transform Your Lifestyle with Healthy Habits</h1>
+            <p>Start your journey towards a better, healthier life today!</p>
+            <a href="#tracker" class="btn">Start Tracking Your Habits</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Featured Articles -->
+        <section class="articles">
+            <h2>Featured Articles</h2>
+
+            <div class="article">
+                <img src="../images/hydration.jpg" alt="Hydration Image">
+                <div class="text-content">
+                    <h3>Hydration: The Power of Water</h3>
+                    <p>Water is vital for maintaining your body’s functions. Hydrate regularly to feel better, improve energy levels, and enhance mental clarity.</p>
+                   
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="../images/sleep.jpg" alt="Sleep Image">
+                <div class="text-content">
+                    <h3>Sleep: How Rest Fuels Your Day</h3>
+                    <p>Quality sleep is essential for your health. Discover tips on how to optimize your sleep schedule for better performance and overall well-being.</p>
+                   
+                </div>
+            </div>
+
+            <div class="article">
+                <img src="../images/eco-friendly.jpg" alt="Eco-Friendly Image">
+                <div class="text-content">
+                    <h3>Eco-Friendly Habits for a Greener Tomorrow</h3>
+                    <p>Simple changes in your daily routine can reduce your environmental impact. Learn more about eco-friendly habits you can adopt today.</p>
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- Habit Tracker -->
+        <section id="tracker" class="habit-tracker">
+            <h2>Track Your Healthy Habits</h2>
+            <div class="tracker-container">
+                <div class="habit">
+                    <label for="water">Drink 8 Glasses of Water</label>
+                    <input type="checkbox" id="water" onclick="updateTracker()">
+                </div>
+                <div class="habit">
+                    <label for="sleep">Get 7-8 Hours of Sleep</label>
+                    <input type="checkbox" id="sleep" onclick="updateTracker()">
+                </div>
+                <div class="habit">
+                    <label for="exercise">Exercise for 30 Minutes</label>
+                    <input type="checkbox" id="exercise" onclick="updateTracker()">
+                </div>
+            </div>
+
+            <button class="btn" onclick="resetTracker()">Reset Tracker</button>
+        </section>
+
+        <!-- Motivational Quotes -->
+    <div class="quote">
+        <div class="quote-img-container">
+            <img src="../images/path-to-chinese-proverb-image.jpg" alt="Chinese Proverb" class="quote-img">
+        </div>
+        <p>"The journey of a thousand miles begins with a single step."</p>
+        <p>- Chinese Proverb</p>
+    </div>
+    
+    <div class="quote">
+        <div class="quote-img-container">
+            <img src="../images/path-to-nelson-mandela-image.jpg" alt="Nelson Mandela" class="quote-img">
+        </div>
+        <p>"It always seems impossible until it’s done."</p>
+        <p>- Nelson Mandela</p>
+    </div>
+</div>
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Lifestyle Habits. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

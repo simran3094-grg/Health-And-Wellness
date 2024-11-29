@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Health & Wellness</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us! We're here to help.</p>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>Phone</h3>
+                <p>+1 234 567 890</p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Email</h3>
+                <p><a href="mailto:contact@healthwellness.com">contact@healthwellness.com</a></p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Social Media</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/groups/205657133675884/about" target="_blank">
+                        <img src="../images/facebook-logo.png" alt="Facebook">
+                    </a>
+                   
+                    <a href="https://www.instagram.com/brilliantwellness_centre/" target="_blank">
+                        <img src="../images/instagram-logo.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-container">
+            <h3>Send Us a Message</h3>
+            <form id="contact-form" onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Your Name" required><br>
+                <input type="email" id="email" placeholder="Your Email" required><br>
+                <textarea id="message" placeholder="Your Message" required></textarea><br>
+                <select id="contact-method" required>
+                    <option value="">Preferred Contact Method</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="social">Social Media</option>
+                </select><br>
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="form-feedback" style="display: none;"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Health & Wellness | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
